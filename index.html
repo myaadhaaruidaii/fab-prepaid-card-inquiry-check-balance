@@ -3,371 +3,634 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAB Prepaid Card Enquiry – Check Balance Without Login</title>
-  <meta name="description" content="FAB prepaid card enquiry guide: check your salary or Ratibi balance without login. Simple steps, no password, 24/7 free portal. Includes troubleshooting.">
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="2unR4irkMf9m-kIo2JGs7DEa0Rgu_0iQep-dkWQiOKk" />
-  <link rel="canonical" href="https://fab-prepaid-card-inquiry-check-balance.onrender.com/">
-  
-  <!-- Font Awesome & Google Fonts for better UI -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
-  
+  <meta name="google-site-verification" content="uBne2vI5vogNXpL-BIXUfJkVlyAao02aJLd1lVF5gjw" />
+  <title>FAB Prepaid Card Inquiry | Complete Balance Guide</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    /* ----- RESET & BASE ----- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
       background: #f4f7fc;
-      color: #1a2332;
-      line-height: 1.6;
-      padding: 2rem 1rem;
+      color: #1a2639;
+      line-height: 1.7;
     }
-    
+
     .container {
-      max-width: 900px;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 20px;
       margin: 0 auto;
-      background: #ffffff;
-      border-radius: 32px;
-      padding: 2.5rem 2.8rem;
-      box-shadow: 0 20px 60px rgba(0, 20, 60, 0.08);
-      animation: fadeSlideUp 0.8s ease-out;
     }
-    
-    @keyframes fadeSlideUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
+
+    /* ----- HEADER (brand-to-brand, full width) ----- */
+    .site-header {
+      background: linear-gradient(145deg, #0b1a33 0%, #1a3a5c 100%);
+      padding: 18px 0;
+      border-bottom: 4px solid #f5b041;
+      box-shadow: 0 8px 20px rgba(0, 20, 40, 0.25);
+      width: 100%;
     }
-    
-    h1, h2, h3 {
-      font-weight: 600;
-      letter-spacing: -0.02em;
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      background: #f5b041;
       color: #0b1a33;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    
-    h1 {
+
+    .logo-text {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    .logo-text span {
+      color: #f5b041;
+      font-weight: 300;
+    }
+
+    .header-tagline {
+      color: #b0d0e8;
+      font-size: 0.95rem;
+      font-weight: 400;
+      border-left: 2px solid #f5b041;
+      padding-left: 18px;
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .header-tagline {
+        display: inline-block;
+      }
+    }
+
+    /* ----- MAIN CONTENT (full width, engaging) ----- */
+    .main-wrapper {
+      max-width: 1400px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* hero / intro */
+    .intro-section {
+      background: linear-gradient(135deg, #e8f0fe 0%, #d4e3f7 100%);
+      border-radius: 28px;
+      padding: 40px 35px;
+      margin-bottom: 40px;
+      box-shadow: 0 12px 30px rgba(11, 26, 51, 0.08);
+      border: 1px solid rgba(255,255,255,0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .intro-section::after {
+      content: "💰";
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      font-size: 120px;
+      opacity: 0.06;
+      transform: rotate(-8deg);
+      pointer-events: none;
+    }
+
+    .intro-section h1 {
       font-size: 2.4rem;
-      margin-bottom: 0.4rem;
+      font-weight: 700;
+      color: #0b1a33;
       line-height: 1.2;
-      border-left: 6px solid #00357a;
-      padding-left: 1.2rem;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
     }
-    
+    .intro-section h1 i {
+      color: #f5b041;
+      margin-right: 10px;
+    }
+
+    .intro-section p {
+      font-size: 1.12rem;
+      color: #1e3a5f;
+      max-width: 850px;
+      margin-bottom: 20px;
+    }
+
+    .intro-highlight {
+      background: rgba(245, 176, 65, 0.15);
+      padding: 18px 25px;
+      border-radius: 18px;
+      border-left: 6px solid #f5b041;
+      font-weight: 500;
+      display: inline-block;
+      backdrop-filter: blur(4px);
+      margin-top: 8px;
+    }
+
+    .intro-highlight a {
+      color: #0b1a33;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid #f5b041;
+      transition: all 0.2s;
+    }
+    .intro-highlight a:hover {
+      color: #c07d1a;
+      border-bottom-color: #0b1a33;
+    }
+
+    /* cards & sections */
+    .section-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 35px 35px 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+      border: 1px solid #eef4fa;
+      transition: transform 0.15s ease;
+    }
+
+    .section-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(11, 26, 51, 0.07);
+    }
+
     h2 {
-      font-size: 1.8rem;
-      margin-top: 2.8rem;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid #e6edf5;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0b1a33;
+      margin-top: 0;
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
-    
+    h2 i, h2 .badge-icon {
+      color: #f5b041;
+      font-size: 1.8rem;
+    }
+
     h3 {
       font-size: 1.4rem;
-      margin-top: 2rem;
-      margin-bottom: 0.8rem;
-      color: #00357a;
+      font-weight: 600;
+      color: #1a3a5c;
+      margin-top: 28px;
+      margin-bottom: 12px;
     }
-    
-    p {
-      margin-bottom: 1.2rem;
+
+    p, li {
+      color: #1f2a44;
       font-size: 1.05rem;
-      color: #1f2a41;
     }
-    
-    .lead {
-      font-size: 1.2rem;
-      font-weight: 400;
-      background: #f0f5fe;
-      padding: 1.2rem 1.8rem;
-      border-radius: 20px;
-      border-left: 4px solid #00357a;
-      margin-bottom: 2rem;
+
+    ul, ol {
+      padding-left: 28px;
+      margin: 18px 0;
     }
-    
-    .highlight-box {
-      background: #f0f7ff;
-      border-radius: 24px;
-      padding: 1.5rem 2rem;
-      margin: 2rem 0;
-      border: 1px solid #dae6f5;
-      transition: all 0.2s ease;
+    li {
+      margin-bottom: 10px;
     }
-    
-    .highlight-box:hover {
-      background: #eaf2fd;
-      transform: scale(1.01);
-      box-shadow: 0 6px 18px rgba(0, 53, 122, 0.06);
+
+    .list-highlight {
+      background: #f0f6fe;
+      padding: 18px 25px;
+      border-radius: 18px;
+      list-style-position: inside;
     }
-    
-    .step-list {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .step-list li {
-      background: #ffffff;
-      margin-bottom: 0.8rem;
-      padding: 0.9rem 1.5rem 0.9rem 3.2rem;
-      border-radius: 60px;
-      border: 1px solid #e2ebf6;
-      position: relative;
-      font-weight: 500;
-      transition: 0.15s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    }
-    
-    .step-list li:before {
-      content: "✓";
-      color: #00357a;
-      font-weight: 700;
-      font-size: 1.4rem;
-      position: absolute;
-      left: 1.2rem;
-      top: 0.7rem;
-    }
-    
-    .step-list li:hover {
-      background: #f7faff;
-      border-color: #b4cce5;
-    }
-    
+
     .table-wrap {
       overflow-x: auto;
-      margin: 2rem 0;
-      border-radius: 18px;
+      margin: 28px 0 10px;
+      border-radius: 20px;
       border: 1px solid #dce6f2;
     }
-    
+
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.98rem;
-      background: white;
+      font-size: 1rem;
+      background: #fafcff;
     }
-    
+
     th {
-      background: #00357a;
+      background: #0b1a33;
       color: white;
       font-weight: 600;
-      padding: 0.9rem 1.2rem;
+      padding: 16px 18px;
       text-align: left;
     }
-    
+
     td {
-      padding: 0.9rem 1.2rem;
-      border-bottom: 1px solid #e6eefa;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e6edf6;
+      vertical-align: top;
     }
-    
+
     tr:last-child td {
       border-bottom: none;
     }
-    
-    .faq-item {
-      background: #f8faff;
-      padding: 1.2rem 1.8rem;
-      margin-top: 1rem;
-      border-radius: 20px;
-      border-left: 4px solid #00357a;
+
+    .table-highlight td {
+      background: #f8fbff;
     }
-    
-    .faq-item strong {
-      display: block;
-      font-size: 1.1rem;
-      margin-bottom: 0.3rem;
+
+    .btn-cta {
+      display: inline-block;
+      background: #f5b041;
       color: #0b1a33;
-    }
-    
-    .btn-ghost {
-      display: inline-block;
-      background: #eef4fc;
-      padding: 0.5rem 1.2rem;
+      font-weight: 700;
+      padding: 12px 32px;
       border-radius: 60px;
-      color: #00357a;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 12px rgba(245, 176, 65, 0.3);
+      margin: 8px 0;
+    }
+    .btn-cta i {
+      margin-right: 10px;
+    }
+    .btn-cta:hover {
+      background: #e09e2f;
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(245, 176, 65, 0.4);
+    }
+
+    .inline-link {
+      color: #1a4b7a;
       font-weight: 600;
       text-decoration: none;
-      border: 1px solid #c6d8ed;
-      transition: 0.2s;
-      margin: 0.2rem 0;
+      border-bottom: 2px solid #f5b041;
+      transition: 0.15s;
     }
-    
-    .btn-ghost i {
-      margin-right: 8px;
+    .inline-link:hover {
+      color: #c07d1a;
+      border-bottom-color: #0b1a33;
     }
-    
-    .btn-ghost:hover {
-      background: #00357a;
-      color: white;
-      border-color: #00357a;
-      transform: translateY(-2px);
-    }
-    
-    .stat-badge {
+
+    .mid-content-link {
       background: #eef4fa;
-      padding: 0.2rem 1rem;
-      border-radius: 60px;
-      font-size: 0.85rem;
+      padding: 3px 12px;
+      border-radius: 40px;
       font-weight: 600;
-      color: #00357a;
-      display: inline-block;
-      margin-right: 8px;
     }
-    
-    .meta-footer {
-      margin-top: 3.5rem;
-      padding-top: 1.8rem;
-      border-top: 2px solid #e6edf5;
+
+    /* ----- FOOTER (full width, brand) ----- */
+    .site-footer {
+      background: #0b1a33;
+      color: #c9dbe9;
+      padding: 40px 20px 30px;
+      width: 100%;
+      margin-top: 20px;
+      border-top: 4px solid #f5b041;
+    }
+
+    .footer-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-copy {
       font-size: 0.95rem;
-      color: #3c4f6b;
-      text-align: center;
     }
-    
-    .meta-footer a {
-      color: #00357a;
+    .footer-copy strong {
+      color: #f5b041;
+      font-weight: 600;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .social-links a {
+      color: #b0cfe5;
+      font-size: 1.8rem;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 60px;
       text-decoration: none;
-      font-weight: 500;
     }
-    
-    .meta-footer a:hover {
-      text-decoration: underline;
+    .social-links a:hover {
+      color: #f5b041;
+      background: rgba(245, 176, 65, 0.12);
+      transform: translateY(-3px);
     }
-    
-    @media (max-width: 640px) {
-      body { padding: 0.8rem; }
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.9rem; padding-left: 0.8rem; }
-      h2 { font-size: 1.5rem; }
-      .lead { font-size: 1rem; padding: 1rem; }
-      .step-list li { padding: 0.7rem 1rem 0.7rem 2.8rem; }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .intro-section h1 {
+        font-size: 1.9rem;
+      }
+      .section-card {
+        padding: 24px 18px;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo-text {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* extra engaging touches */
+    .pill-badge {
+      background: #f5b041;
+      color: #0b1a33;
+      padding: 3px 16px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    .highlight-box {
+      background: #e1edfa;
+      padding: 20px 25px;
+      border-radius: 20px;
+      border-left: 8px solid #f5b041;
+      margin: 25px 0;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin: 20px 0;
+    }
+    @media (max-width: 680px) {
+      .two-col-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>FAB Prepaid Card Enquiry | Checking Your Balance Without Login</h1>
-    
-    <!-- meta description & canonical are in head, but we reinforce the link -->
-    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 0.8rem 0 1.8rem 0;">
-      <span class="stat-badge"><i class="fas fa-clock"></i> 5 min read</span>
-      <span class="stat-badge"><i class="fas fa-shield-alt"></i> No login required</span>
-      <span class="stat-badge"><i class="fas fa-mobile-alt"></i> 24/7</span>
-    </div>
-    
-    <p>Have you ever stood at a shop counter or an ATM, wondering if you have enough money on your card? If you have a FAB prepaid card, you are not alone. Many people in the UAE use these cards for their salary or daily expenses. The good news is that checking your balance is very simple. You do not need to be a tech expert or remember a complicated password. This guide will show you exactly how to do a <a href="https://khaleejadvice.com/fab-balance-check/">fab prepaid card inquiry</a>. We will keep things simple, clear, and easy to follow. For an even faster check, you can also visit KhaleejAdvice’s FAB balance check for more tips.</p>
-    
-    <div class="highlight-box">
-      <i class="fas fa-bolt" style="color:#00357a; margin-right: 10px;"></i>
-      <strong>Quick FAB prepaid card enquiry:</strong> Use the official portal – no login, no password. Just your card and a few seconds.
-    </div>
-    
-    <h2>What is a FAB Prepaid Card?</h2>
-    <p>First, let's understand what a prepaid card is. Unlike a regular bank account, a prepaid card is not connected to a savings or current account. You can only spend the money that has been loaded onto the card. Think of it like a gift card that you can use anywhere. Many companies in the UAE use FAB prepaid cards to pay salaries. This system is called the Wage Protection Scheme (WPS), and it helps make sure everyone gets paid on time and safely.</p>
-    <p>These cards are perfect for people who might not have a full bank account. They let you buy things in shops, pay for services online, and take out cash from ATMs. Because your spending is limited to the balance on the card, it helps you control your budget easily.</p>
-    
-    <h2>Why an Online FAB Prepaid Card Enquiry is Useful</h2>
-    <p>Doing a <strong>FAB prepaid card enquiry</strong> online is the fastest and easiest way to check your money. Here is why so many people use it:</p>
-    <ul style="list-style: none; padding: 0;">
-      <li style="padding: 0.5rem 0 0.5rem 2rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1.2rem;">It is <strong>free</strong> – no charge for checking your balance online.</li>
-      <li style="padding: 0.5rem 0 0.5rem 2rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1.2rem;">It is <strong>fast</strong> – you get your balance in seconds.</li>
-      <li style="padding: 0.5rem 0 0.5rem 2rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1.2rem;">Available <strong>24/7</strong> – even on holidays or late at night.</li>
-      <li style="padding: 0.5rem 0 0.5rem 2rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1.2rem;">No login required – just your card details.</li>
-    </ul>
-    
-    <h3>My Personal Experience</h3>
-    <p>I remember helping a friend who had just moved to Dubai. He had a new FAB prepaid card for his salary but was worried about how to check it. He thought he had to go to a bank branch. When I showed him the online portal, he was amazed. In less than a minute, he could see his balance and his last few transactions. It gave him peace of mind. This is the beauty of the <strong>FAB prepaid card enquiry</strong> service. It is designed to be simple for everyone, no matter your experience with banks.</p>
-    
-    <h2>How to Check FAB Card Balance (The Two-Step Process)</h2>
-    <p>The official way to check your balance is through the FAB Prepaid Card Enquiry Portal. It is a simple page that is not part of the main online banking system. This means you can access it directly without signing in.</p>
-    <p>Here are the simple steps:</p>
-    <ol class="step-list">
-      <li><strong>Go to the Portal:</strong> Open your browser and go to the official FAB enquiry page (you can also use the FAB balance enquiry portal for quick access).</li>
-      <li><strong>Enter Your Details:</strong> On the page, you will see two boxes to fill in. The first box asks for the <strong>last two digits</strong> of your 16-digit card number. The second box asks for your <strong>Card ID</strong> (printed on the card, usually on the bottom-left).</li>
-      <li><strong>Click ‘Go’:</strong> After entering both, click the button that says ‘Go’ or ‘Submit’.</li>
-      <li><strong>See Your Balance:</strong> Your current balance and recent transactions appear instantly.</li>
-    </ol>
-    <p>This portal is available 24/7, free of charge, and works from any device. Many users rely on this <strong>FAB prepaid card enquiry</strong> method because it’s fast and doesn’t require any registration.</p>
-    
-    <h2>Other Ways to Make a FAB Card Balance Enquiry</h2>
-    <p>The online portal is the best and easiest way to do a <strong>FAB prepaid card enquiry</strong>. But, there are other methods if you prefer them.</p>
-    
-    <h3>1. Use the FAB Mobile App or Payit</h3>
-    <p>You can also use the FAB Mobile app or the Payit wallet app. If you register your prepaid card with the app, you can see your balance on your phone. The app is modern and user-friendly. It also allows you to transfer money and pay bills, which is very convenient.</p>
-    
-    <h3>2. Check at an ATM</h3>
-    <p>Using an ATM is a classic and secure method. You can check your balance at any FAB ATM or any ATM that accepts your card's network (like Visa or Mastercard). Just insert your card, enter your PIN, and select "Balance Inquiry." The machine will show your balance on the screen. Some ATMs might charge a small fee if they are not FAB ATMs, so it is good to know that.</p>
-    
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>ATM Type</th><th>Estimated Fee</th></tr></thead>
-        <tbody>
-          <tr><td>FAB ATM</td><td>Free</td></tr>
-          <tr><td>Non-FAB ATM in UAE</td><td>~AED 1.05 per enquiry</td></tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <h2>Research and Statistics on Prepaid Cards</h2>
-    <p>Did you know that prepaid cards are a big part of the UAE banking system? They are not just for individuals. Many companies use them to manage their money better. This is because prepaid cards help with expense management for corporations. Companies use them to handle petty cash and make regular payments without needing to write cheques.</p>
-    <p>A key fact is the variety of prepaid cards FAB offers. They have specialized cards for different purposes:</p>
-    <ul style="list-style: none; padding-left: 0;">
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;"><strong>Ratibi Prepaid Card:</strong> For payroll and salary payments.</li>
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;"><strong>Payment Prepaid Card:</strong> For corporate transactions.</li>
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;"><strong>Prepaid Gift Card:</strong> For gifts, bonuses, and rewards.</li>
-    </ul>
-    <p><span class="stat-badge"><i class="fas fa-database"></i> Source</span> <em>First Abu Dhabi Bank PJSC FAB Prepaid Cards: Key Facts Statement.</em> According to UAE Central Bank data, the Wage Protection System (WPS) covers over 5 million private sector workers. Regular balance checks help employees detect payroll errors early. A 2023 survey found that 78% of salary card users check their balance within 24 hours of payday to confirm receipt. This habit reduces financial stress and helps workers budget more effectively.</p>
-    
-    <h2>Troubleshooting Your FAB Prepaid Card Enquiry</h2>
-    <p>Sometimes, you might face a problem when you try to check your balance. Here are some common issues and how to fix them.</p>
-    
-    <h3>"Invalid Card ID" Error</h3>
-    <p>This is the most common mistake. Many people confuse the Card ID with the card number. The <strong>Card ID</strong> is usually shorter and printed on the front of your card (often on the bottom left). The 16-digit card number is the long number across the middle. When doing a <strong>FAB prepaid card enquiry</strong>, make sure you are entering the correct ID, not the long number.</p>
-    
-    <h3>"Incorrect Last Two Digits"</h3>
-    <p>The portal asks for the last two digits of your card number. Make sure you are entering only these two numbers. Look at your card and type them in carefully.</p>
-    
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Problem</th><th>Likely Cause</th><th>Solution</th></tr></thead>
-        <tbody>
-          <tr><td>Invalid Card ID</td><td>Entered the 16-digit card number</td><td>Enter the shorter ID from the bottom left of your card.</td></tr>
-          <tr><td>Last 2 digits error</td><td>Entered wrong numbers</td><td>Double-check the last two numbers on your card.</td></tr>
-          <tr><td>Card blocked at ATM</td><td>KYC documents expired</td><td>Update your Emirates ID with FAB.</td></tr>
-          <tr><td>Salary not showing</td><td>Employer hasn't processed it yet</td><td>Check with your employer and wait a few hours.</td></tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <h2>Keeping Your FAB Prepaid Card Safe</h2>
-    <p>When you use any online service, safety is important. Here are some simple tips to keep your card and money secure:</p>
-    <ul style="list-style: none; padding-left: 0;">
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;">Always use the official FAB website or the FAB balance enquiry portal.</li>
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;">Keep your Card ID and PIN secret. Never share them.</li>
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;">Use a safe internet connection – avoid public Wi-Fi for balance checks.</li>
-      <li style="padding: 0.4rem 0 0.4rem 1.8rem; background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'14\' viewBox=\'0 0 24 24\' fill=\'%2300357a\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg>') left center no-repeat; background-size: 1rem;">Check your transaction history regularly. Report anything suspicious to FAB immediately.</li>
-    </ul>
-    
-    <h2>Frequently Asked Questions (FAQs)</h2>
-    
-    <div class="faq-item"><strong>How can I check my FAB salary card balance online?</strong> You can check it easily via the official FAB prepaid card balance enquiry portal. You just need your card details—the last two digits of the card number and the Card ID.</div>
-    
-    <div class="faq-item"><strong>What details are needed for a FAB prepaid card enquiry?</strong> You will need your physical prepaid card. Look for the last two digits of the card number (the long 16-digit number) and your separate Card ID (printed on the front).</div>
-    
-    <div class="faq-item"><strong>Can I check my FAB balance without a login?</strong> Yes. The main benefit of the online enquiry portal is that you do not need to log in with a username or password.</div>
-    
-    <div class="faq-item"><strong>What do I do if my FAB prepaid card balance shows an error?</strong> First, double-check the Card ID and the last two digits you entered. If the error continues, try again later. If your card is blocked, you might need to visit a FAB branch or call customer support.</div>
-    
-    <div class="faq-item"><strong>Is there a fee to check my balance online?</strong> No, checking your balance online is completely free. There are no charges for this service.</div>
-    
-    <div class="faq-item"><strong>What if my salary does not appear on my card?</strong> Check with your employer to confirm the transfer. You can also wait a few hours, as banking systems might take time to process. If the problem remains, contact FAB's customer service.</div>
-    
-    <h2>Final Thoughts</h2>
-    <p>Doing a <strong>FAB prepaid card enquiry</strong> is a simple and important skill. It helps you manage your money, know when your salary arrives, and avoid embarrassing moments at the checkout. The service is designed to be easy, secure, and accessible to everyone, even if you are new to banking. Remember, you do not need a complicated login. Just use your card, visit the official portal (or the <a href="https://fab-balance-enquiry.sarahbrownft9450.workers.dev/">FAB balance enquiry</a> page), and you will see your balance in seconds. By following the simple steps in this guide, you can take control of your finances with confidence.</p>
 
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <div class="logo-icon">FAB</div>
+      <div class="logo-text">Prepaid<span> Inquiry</span></div>
+    </div>
+    <div class="header-tagline">
+      <i class="fas fa-shield-alt" style="color:#f5b041; margin-right:8px;"></i> 
+      Secure • Instant • 24/7 Balance Access
+    </div>
   </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="main-wrapper">
+
+  <!-- INTRO SECTION (first link placed here) -->
+  <section class="intro-section">
+    <h1><i class="fas fa-credit-card"></i>FAB Prepaid Card Inquiry | Complete Balance Guide</h1>
+    <p><strong>First Abu Dhabi Bank (FAB)</strong> issues millions of prepaid and salary cards across the UAE. Whether you hold a <strong>Ratibi salary card</strong>, a corporate prepaid card, or a government benefit card, knowing how to check your balance quickly and securely is essential.</p>
+    <p>This comprehensive guide covers every method – from the official online portal to the mobile app, ATM, SMS, and customer support. You'll also learn how to fix common errors, protect your funds, and understand your <strong>Card ID</strong> vs. card number.</p>
+    
+    <!-- FIRST LINK: intro mid -->
+    <div class="intro-highlight">
+      <i class="fas fa-arrow-right" style="margin-right: 10px; color:#f5b041;"></i> 
+      Start your <a href="https://khaleejadvice.com/fab-balance-check/">FAB prepaid card inquiry</a> now via the official balance check portal: 
+      FAB Balance Check Online &rarr;
+    </div>
+    <p style="margin-top: 18px; font-size: 1rem; color: #1e3a5f;">Use the <strong>last four digits</strong> of your card number and your unique <strong>Card ID</strong> to view your available balance and recent transactions instantly.</p>
+  </section>
+
+  <!-- ======== BODY SECTION 1: UNDERSTANDING ======== -->
+  <section class="section-card">
+    <h2><i class="fas fa-layer-group"></i> Understanding the FAB Prepaid Card Ecosystem</h2>
+    <p>FAB offers several prepaid products, but the most common are:</p>
+    <ul>
+      <li><strong>Ratibi Salary Card:</strong> The most widely used prepaid card for salary disbursement under the UAE Wages Protection System (WPS).</li>
+      <li><strong>FAB Payment Cards:</strong> Used by businesses for petty cash and recurring payments.</li>
+      <li><strong>Government Prepaid Cards:</strong> For benefits and allowances (e.g., AjmanPay Sahala).</li>
+    </ul>
+    <p><strong>Key distinction:</strong> A prepaid card is <em>not</em> a traditional bank account. You <strong>cannot</strong> log in to standard FAB online banking with your card details. Instead, you use the dedicated <strong>Prepaid Card Inquiry Portal</strong> (powered by Magnati).</p>
+  </section>
+
+  <!-- ======== BODY SECTION 2: METHODS ======== -->
+  <section class="section-card">
+    <h2><i class="fas fa-sitemap"></i> Complete Inquiry Methods</h2>
+    <p>We've compiled every possible way to perform a <strong>FAB prepaid card inquiry</strong>. Choose the one that fits your situation.</p>
+
+    <h3>1. Official Online Portal (Recommended)</h3>
+    <p>No registration or app download required. Just your card and a browser.</p>
+    <ul>
+      <li>Go to the <strong>Magnati PPC portal</strong> (official FAB prepaid inquiry page).</li>
+      <li>Enter the <strong>last 4 digits</strong> of your 16-digit card number.</li>
+      <li>Enter your <strong>Card ID</strong> (printed separately on the card – <em>not</em> the 16-digit number).</li>
+      <li>Complete the captcha and click <strong>Go</strong>.</li>
+      <li>View your balance and last 10 transactions.</li>
+    </ul>
+
+    <h3>2. FAB Mobile App</h3>
+    <p>After a one-time registration, you can check your balance, review transactions, and manage your card.</p>
+    <ul>
+      <li>Download the FAB Mobile app (iOS/Android).</li>
+      <li>Register using your Emirates ID and card details.</li>
+      <li>Log in with PIN or biometrics – your balance appears on the dashboard.</li>
+    </ul>
+
+    <h3>3. ATM Inquiry</h3>
+    <ul>
+      <li>Insert your card at any FAB ATM (or other UAE ATMs, fees may apply).</li>
+      <li>Enter your PIN and select <strong>Balance Inquiry</strong>.</li>
+      <li>View the balance on screen or print a receipt.</li>
+    </ul>
+
+    <h3>4. SMS Banking</h3>
+    <ul>
+      <li>Send <strong>BAL</strong> + last 4 digits of your card number to <strong>6667</strong> or <strong>2121</strong>.</li>
+      <li>Receive your balance via SMS (standard charges may apply).</li>
+    </ul>
+
+    <h3>5. Customer Support</h3>
+    <ul>
+      <li><strong>Ratibi support:</strong> 600 52 2298 (UAE)</li>
+      <li><strong>General prepaid support:</strong> 600 52 5500</li>
+      <li>Follow the IVR or speak to an agent to hear your balance.</li>
+    </ul>
+  </section>
+
+  <!-- ======== BODY SECTION 3: TABLE & LIST ======== -->
+  <section class="section-card">
+    <h2><i class="fas fa-table"></i> Card ID vs. Card Number &amp; Quick Reference</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Term</th><th>Meaning</th><th>Used For</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Card Number</strong></td><td>16-digit primary account number</td><td>Purchases, ATM, card identification</td></tr>
+          <tr><td><strong>Last 4 Digits</strong></td><td>Final four digits of the main card number</td><td>Online balance verification (portal)</td></tr>
+          <tr><td><strong>Card ID</strong></td><td>Separate identifier printed on the card</td><td><strong>Prepaid card inquiry</strong> (critical!)</td></tr>
+          <tr><td><strong>PIN</strong></td><td>Secret number for ATM and transactions</td><td>ATM balance checks, withdrawals</td></tr>
+          <tr><td><strong>CVV</strong></td><td>3-digit security code (on the back)</td><td>Online purchases (never share)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key Information Checklist</h3>
+    <!-- LIST SECTION (as requested) -->
+    <ul class="list-highlight">
+      <li><i class="fas fa-check-circle" style="color:#f5b041; margin-right:10px;"></i> <strong>Physical card</strong> – to read the Card ID and last 4 digits.</li>
+      <li><i class="fas fa-check-circle" style="color:#f5b041; margin-right:10px;"></i> <strong>Card ID</strong> – usually 6–8 digits on the front.</li>
+      <li><i class="fas fa-check-circle" style="color:#f5b041; margin-right:10px;"></i> <strong>Last 2 or 4 digits</strong> of the 16-digit number.</li>
+      <li><i class="fas fa-check-circle" style="color:#f5b041; margin-right:10px;"></i> <strong>Registered mobile number</strong> – for SMS and OTP.</li>
+      <li><i class="fas fa-check-circle" style="color:#f5b041; margin-right:10px;"></i> <strong>Emirates ID</strong> – for mobile app registration.</li>
+    </ul>
+
+    <!-- SECOND LINK: placed in content mid -->
+    <div style="background: #f2f8ff; padding: 18px 22px; border-radius: 20px; margin: 30px 0 10px; border: 1px solid #d4e3f7;">
+      <p style="margin:0; font-size:1.05rem;">
+        <i class="fas fa-link" style="color:#f5b041; margin-right:10px;"></i> 
+        For a direct and secure balance check, use the official 
+        <a href="https://fab-balance-enquiry.sarahbrownft9450.workers.dev/"><strong>FAB balance enquiry</strong></a> 
+        service. It's fast, reliable, and requires only your card details.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======== BODY SECTION 4: RATIBI & TROUBLESHOOTING ======== -->
+  <section class="section-card">
+    <h2><i class="fas fa-wallet"></i> Ratibi Salary Card &amp; Common Issues</h2>
+    <p>The <strong>Ratibi card</strong> is a payroll prepaid card for employees earning up to AED 5,000. It's part of the WPS system. Here's how to check your salary and fix problems.</p>
+
+    <h3>How to Check Ratibi Salary Online</h3>
+    <ul>
+      <li>Open the prepaid card inquiry portal.</li>
+      <li>Enter last 4 digits of the card number + Card ID + captcha.</li>
+      <li>View available balance and recent transactions.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong><i class="fas fa-exclamation-triangle" style="color:#c07d1a;"></i> Salary not showing?</strong> Common reasons:
+      <ul style="margin-top: 10px;">
+        <li>Employer hasn't submitted payroll yet.</li>
+        <li>Incorrect employee or card details on file.</li>
+        <li>Card expired or replaced.</li>
+        <li>WPS file rejected or holiday delay.</li>
+      </ul>
+      <p style="margin-top:10px;">First check transaction history, then contact your employer's HR/payroll department.</p>
+    </div>
+
+    <h3>Balance Not Updating After Purchase</h3>
+    <p>Some merchants (hotels, petrol stations) place a temporary hold on your card. The <strong>available balance</strong> may be lower than the <strong>current balance</strong> until the transaction settles. Always check the transaction list for pending amounts.</p>
+  </section>
+
+  <!-- ======== BODY SECTION 5: SECURITY & BEST METHOD ======== -->
+  <section class="section-card">
+    <h2><i class="fas fa-lock"></i> Security &amp; Best Practice</h2>
+    <ul>
+      <li><strong>Only use official FAB/Magnati portals</strong> – never enter your card details on third-party sites.</li>
+      <li><strong>Never share your PIN, OTP, or CVV</strong> – FAB will never ask for these.</li>
+      <li><strong>Avoid public Wi-Fi</strong> when checking your balance – use mobile data.</li>
+      <li><strong>Report lost/stolen cards immediately</strong> via customer support.</li>
+      <li><strong>Regularly review transactions</strong> to spot unauthorized activity.</li>
+    </ul>
+
+    <h3>Which Method Is Best for You?</h3>
+    <div class="two-col-grid">
+      <div style="background:#eef4fa; padding:18px; border-radius:20px;">
+        <h4 style="margin-top:0; color:#0b1a33;">👤 Ratibi / Prepaid Holder</h4>
+        <p><strong>Online portal</strong> – quick, no login required. Just your card and the last 4 digits + Card ID.</p>
+      </div>
+      <div style="background:#eef4fa; padding:18px; border-radius:20px;">
+        <h4 style="margin-top:0; color:#0b1a33;">📱 Regular Account Holder</h4>
+        <p><strong>FAB Mobile App</strong> – full access to balances, statements, and transactions in one place.</p>
+      </div>
+      <div style="background:#eef4fa; padding:18px; border-radius:20px;">
+        <h4 style="margin-top:0; color:#0b1a33;">📶 No Internet</h4>
+        <p><strong>ATM</strong> or <strong>SMS</strong> – reliable offline options.</p>
+      </div>
+      <div style="background:#eef4fa; padding:18px; border-radius:20px;">
+        <h4 style="margin-top:0; color:#0b1a33;">🚨 Card Blocked / Suspicious</h4>
+        <p><strong>Call Support</strong> immediately – 600 52 2298 (Ratibi) or 600 52 5500.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== BODY SECTION 6: FAQ & FINAL TIPS ======== -->
+  <section class="section-card">
+    <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+    <ul>
+      <li><strong>Can I check my FAB balance without the app?</strong> Yes – use the online portal, ATM, or SMS.</li>
+      <li><strong>Where is the Card ID?</strong> Printed separately on the front or back of the card. Look for a shorter number.</li>
+      <li><strong>Why is the portal saying "No record found"?</strong> Usually because of incorrect Card ID/last 4 digits, or salary not yet credited.</li>
+      <li><strong>Is the prepaid balance enquiry free?</strong> The online portal is free. ATM fees may apply at non-FAB machines.</li>
+      <li><strong>What if the portal is not loading?</strong> Try a different browser, clear cache, disable VPN, or use mobile data.</li>
+    </ul>
+    <p style="margin-top:20px;">For urgent issues, always contact FAB directly. Never share your card details with unofficial sources.</p>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER (with social links) ========== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-copy">
+      &copy; 2026 <strong>FAB Prepaid Inquiry Guide</strong> – Independent resource for FAB cardholders.<br>
+      <span style="font-size:0.85rem; opacity:0.7;">All trademarks are property of their respective owners.</span>
+    </div>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
